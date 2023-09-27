@@ -10,7 +10,7 @@ public class patterns {
         System.out.println("Solid Rectangle:");
         for (int i = 0; i < 4; i++) {
 
-            for (int j = 1; j < 5; j++) {
+            for (int j = 0; j < 5; j++) {
                 System.out.print("*");
             }
             System.out.println("");
@@ -66,6 +66,17 @@ public class patterns {
         System.out.println("Half Pyramid:");
         //Outer loop
         for (int i=1; i <= n; i++) {
+            //inner loop
+            for (int j=1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        //Inverted Half Pyramid
+        System.out.println("Inverted Half Pyramid");
+        //outer loop
+         for (int i=n; i >= 1; i--) {
             //inner loop
             for (int j=1; j <= i; j++) {
                 System.out.print("*");
