@@ -131,5 +131,33 @@ public class patterns {
             }
             System.out.println();
         }
+
+        //Floyd's Triangle
+        System.out.println("Floyd's Triangle:");
+        int number = 1;
+        //outer loop 
+        for (int i=1; i<=n; i++) {
+            //inner loop 
+            for (int j=1; j <= i; j++) {
+                System.out.print(number+ " ");
+                number++;
+            }
+            System.out.println();
+        }
+
+        //0-1 Triangle
+        System.out.println("0-1 Triangle:");
+
+        //outer loop 
+        for (int i=1; i<=n; i++) {
+            //inner loop
+            for (int j=1; j<=i; j++) {
+                if ((i + j)%2==0) 
+                    System.out.print("1" + " ");
+                else   
+                    System.out.print("0" + " ");
+            }
+            System.out.println();
+        }
     }
 }
