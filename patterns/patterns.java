@@ -83,5 +83,53 @@ public class patterns {
             }
             System.out.println();
         }
+
+        //Inverted Half Pyramid (rotated by 180 degree)
+        System.out.println("Inverted Half Pyramid (rotated by 180 degree):");
+        //Outer loop
+        for (int i=1; i <= n; i++) {
+            //inner loop 1 
+            for (int j=1; j<=n-i; j++) {
+                System.out.print(" ");
+            }
+            //inner loop 2
+            for (int j=1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        //Half Pyramid of numbers
+        System.out.println("Half Pyramid of numbers:");
+        //Outer loop
+        for (int i=1; i <= n+1; i++) {
+            //inner loop
+            for (int j=1; j <= i; j++) {
+                System.out.print(j+ " ");
+            }
+            System.out.println();
+        }
+
+        //Inverted Half Pyramid of numbers
+        System.out.println("Inverted Half Pyramid of numbers:");
+        n = 5;
+        //Outer loop
+        for (int i=n; i >= 1; i--) {
+            //inner loop
+            for (int j=1; j <= i; j++) {
+                System.out.print(j+ " ");
+            }
+            System.out.println();
+        }
+
+        //another method 
+        //outer loop 
+        for (int i=1; i<=n; i++) {
+            //inner loop 
+            for (int j=1; j <= n-i+1; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
     }
 }
